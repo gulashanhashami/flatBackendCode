@@ -3,7 +3,7 @@ const path = require("path");
 const jwt=require("jsonwebtoken");
 const User=require("../models/user.model");
 const newToken=(user)=>{
-    return jwt.sign({user:user}, process.env.JWT_SECRET_KEY,{
+    return jwt.sign({user:user}, "sdfshdfldsjglfshglsdfghslfghfdslg",{
         expiresIn:60*60*5 
     });
 };
